@@ -138,6 +138,7 @@ namespace WQZSHelper
 
 
 
+
     public class LocationInfo
     {
         public string Name { get; set; }
@@ -149,6 +150,9 @@ namespace WQZSHelper
         public List<LocationInfo> Infos { get; set; }
     }
 
+    /// <summary>
+    /// 数字分类
+    /// </summary>
     public struct Number
     {
         /// <summary>
