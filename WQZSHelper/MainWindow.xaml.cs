@@ -114,9 +114,9 @@ namespace WQZSHelper
                     row.CreateCell(1).SetCellValue(n1);
                     row.CreateCell(2).SetCellValue(n2);
                     row.CreateCell(3).SetCellValue(dateDiff - n1 - n2);
-                    
 
-                    
+
+                    //row = null;
                 }
 
                 using (MemoryStream ms = new MemoryStream())
@@ -126,11 +126,8 @@ namespace WQZSHelper
                     ms.Position = 0;
                     File.WriteAllBytes(open.FileName + 1, ms.ToArray());
 
-                }
-
-
+                }                
             }
-
             MessageBox.Show("OK");
         }
     }
